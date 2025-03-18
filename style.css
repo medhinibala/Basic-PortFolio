@@ -1,0 +1,89 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 70px; /* Offset for fixed header */
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #b74b4b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+nav a {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover { color: #f39c12; }
+
+/* Section Styling */
+section {
+    padding: 50px 10%;
+}
+
+/* Skills & Projects */
+.skills-container, .projects-container, .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill, .project, .experience-item {
+    flex: 1 1 calc(50% - 20px);
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #b74b4b;
+    margin-bottom: 15px;
+}
+
+/* Social Icons */
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 10px;
+    color: #b74b4b;
+    transition: 0.3s;
+}
+
+.social-icons a:hover { color: #f39c12; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container, .projects-container, .experience-container {
+        flex-direction: column;
+    }
+}
